@@ -9,10 +9,8 @@ class MaxSubArrayOfSizek {
     int windwowStart = 0;
     for (int windowEnd = 0; windowEnd < arr.length; windowEnd++) {
       windowSum += arr[windowEnd];
-      System.out.println(windowSum  + "Window sum");
 
       if (windowEnd >= k - 1) {
-        System.out.println("ppp " + maxSum + windowSum);
         maxSum = Math.max(maxSum, windowSum);
         windowSum -= arr[windwowStart];
         windwowStart++;
