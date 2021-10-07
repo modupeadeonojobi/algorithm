@@ -1,13 +1,14 @@
 import java.util.*;
 
 /**
- * Given a string, find the length of the longest substring 
- * in it with no more than K distinct characters.
+ * Given a string, find the length of the longest substring in it with no more
+ * than K distinct characters.
+ * 
+ * By distinct chareacters, it means different characters.
  */
 
-
 class LongestSubstring {
-  public static int findLength (String str, int k) {
+  public static int findLength(String str, int k) {
     if (str == null || str.length() == 0 || str.length() < k)
       throw new IllegalArgumentException();
 
@@ -35,5 +36,5 @@ class LongestSubstring {
     System.out.println("Length of the longest substring: " + LongestSubstring.findLength("cbbebi", 3));
 
   }
-  
+
 }
